@@ -18,6 +18,8 @@ end.
 
 <p align="center">
   <a href="#-tecnologias-utilizadas">Tecnologias</a> -
+  <a href="#-funcionamento">Funcionamento</a> -
+  <a href="#-indice">Índice</a> -
   <a href="#-contato">Contato</a>
 </p>
 
@@ -49,6 +51,22 @@ end.
   <a href= "https://www.youtube.com/channel/UCrZgsh8IWyyNrRZ7cjrPbcg"><img alt="perfil youtube livio alvarenga" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=FF0000&logo=YouTube&label=Youtube&message=Livio Alvarenga&color=FF0000"></a>
   
 </p>
+
+<a id="-funcionamento"></a>
+
+## :warning: Funcionamento
+
+Usamos o Vscode como IDE e o Node.js para rodar JavaScript.
+
+É necessário utilizar a extensão Code Runner para rodar somente trechos do código.
+
+<a id="-indice"></a>
+
+## :bookmark_tabs: Índice de códigos
+
+1. Tipos Primitivos
+2. Variáveis
+3.
 
 <a id="-contato"></a>
 
