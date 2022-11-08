@@ -8,7 +8,7 @@ end.
 | :placard: Vitrine.Dev |                             |
 | --------------------- | --------------------------- |
 | :sparkles: Nome       | **JavaScript para Backend** |
-| :label: Tecnologias   | JavaScript - Node.js        |
+| :label: Tecnologias   | javascript, nodejs          |
 | :rocket: URL          | -                           |
 | :fire: Desafio        | -                           |
 
