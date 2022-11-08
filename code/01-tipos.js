@@ -35,8 +35,8 @@ const tipo = typeof booleano;
 console.log(booleano, tipo);
 
 // - undefined (ausência de valor)
-const undefinedo = undefined;
-const tipo = typeof undefinedo;
+let undefinedo;
+let tipo = typeof undefinedo;
 console.log(tipo);
 
 // - null (existe mais não tem nada dentro)
@@ -54,6 +54,7 @@ const objeto = {
 };
 const tipo = typeof objeto;
 console.log(objeto, tipo);
+console.log(objeto.name);
 
 // - array (vetores)
 const lista = [
@@ -65,3 +66,22 @@ const lista = [
 ];
 const tipo = typeof lista;
 console.log(lista, tipo);
+console.log(lista[0]);
+
+// - Convertendo Tipos
+const number = 10;
+const numberString = "10";
+
+console.log(number === numberString); //false
+console.log(number == numberString); //true
+console.log(number + numberString); //1010
+console.log(number + Number(numberString)); //20
+
+// - Tipagem dinâmica (untyped)
+
+let myVar = 10;
+console.log(typeof myVar); // "number"
+myVar = "string";
+console.log(typeof myVar); // "string"
+myVar = true;
+console.log(typeof myVar); // "booleano"

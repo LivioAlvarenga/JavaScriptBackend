@@ -23,8 +23,6 @@ end.
   <a href="#-contato">Contato</a>
 </p>
 
-## ....
-
 <a id="-tecnologias-utilizadas"></a>
 
 ## :floppy_disk: Tecnologias utilizadas
@@ -37,11 +35,11 @@ end.
 </p>
 
 <p align="center">
-  <a href="#license"><img src="https://img.shields.io/github/license/LivioAlvarenga/JavaScript-Start?color=ff0000"></a>
-  <a href="https://github.com/LivioAlvarenga/JavaScript-Start/issues"><img src="https://img.shields.io/github/issues/LivioAlvarenga/JavaScript-Start" alt="issue site alurabooks" /></a>
-  <a href="https://github.com/LivioAlvarenga/JavaScript-Start"><img src="https://img.shields.io/github/languages/count/LivioAlvarenga/JavaScript-Start" alt="total amount of programming languages used in the project" /></a>
-  <a href="https://github.com/LivioAlvarenga/JavaScript-Start"><img src="https://img.shields.io/github/languages/top/LivioAlvarenga/JavaScript-Start" alt="most used language in the projects" /></a>
-  <a href="https://github.com/LivioAlvarenga/JavaScript-Start"><img src="https://img.shields.io/github/repo-size/LivioAlvarenga/JavaScript-Start" alt="repository size" /></a>
+  <a href="#license"><img src="https://img.shields.io/github/license/LivioAlvarenga/JavaScriptBackend?color=ff0000"></a>
+  <a href="https://github.com/LivioAlvarenga/JavaScriptBackend/issues"><img src="https://img.shields.io/github/issues/LivioAlvarenga/JavaScriptBackend" alt="issue site alurabooks" /></a>
+  <a href="https://github.com/LivioAlvarenga/JavaScriptBackend"><img src="https://img.shields.io/github/languages/count/LivioAlvarenga/JavaScriptBackend" alt="total amount of programming languages used in the project" /></a>
+  <a href="https://github.com/LivioAlvarenga/JavaScriptBackend"><img src="https://img.shields.io/github/languages/top/LivioAlvarenga/JavaScriptBackend" alt="most used language in the projects" /></a>
+  <a href="https://github.com/LivioAlvarenga/JavaScriptBackend"><img src="https://img.shields.io/github/repo-size/LivioAlvarenga/JavaScriptBackend" alt="repository size" /></a>
 <p>
 <p align="center">
   <a href= "https://www.livioalvarenga.com/"><img alt="portifólio livio alvarenga" src="files/badgePortifolioLivio.svg"></a>
@@ -66,7 +64,8 @@ Usamos o Vscode como IDE e o Node.js para rodar JavaScript.
 
 1. Tipos Primitivos
 2. Variáveis
-3.
+3. Operadores
+4. Funções
 
 <a id="-contato"></a>
 
