@@ -3,6 +3,8 @@
 Repositório para adicionar conteúdos de estudos e boas práticas em JavaScript com foco no Back
 end.
 
+<hr>
+
 | :placard: Vitrine.Dev |                             |
 | --------------------- | --------------------------- |
 | :sparkles: Nome       | **JavaScript para Backend** |
@@ -10,7 +12,7 @@ end.
 | :rocket: URL          | -                           |
 | :fire: Desafio        | -                           |
 
-<!-- Inserir imagem com a #vitrinedev ao final do link -->
+<hr>
 
 ![](https://github.com/LivioAlvarenga/JavaScriptBackend/blob/main/files/javascript-code.jpg?raw=true#vitrinedev)
 
@@ -72,13 +74,13 @@ Usamos o Vscode como IDE e o Node.js para rodar JavaScript.
     - Array
     - Conversão de tipos
     - Tipagem dinâmica (untyped)
-2. Variáveis
+1. Variáveis
     - Declarar X Atribuir
     - Agrupamento de declarações
     - Typeof
     - var, const e let
     - console.log
-3. Operadores
+1. Operadores
     - Operadores Lógicos >, <, >=, <=, \==, !=, === !==
     - == Vs ===
     - || (or) && (and)
@@ -89,7 +91,7 @@ Usamos o Vscode como IDE e o Node.js para rodar JavaScript.
     - Operadores de atribuição
     - FALSY e TRUTHY
     - Operator precendence
-4. Funções
+1. Funções
     - function declaration
     - function anonymous
     - parameters VS arguments
@@ -100,6 +102,10 @@ Usamos o Vscode como IDE e o Node.js para rodar JavaScript.
     - callback function
     - function() constructor
     - high order functions
+1. Strings
+    - Conversão para string
+    - Concatenando strings
+    - Métodos para strings
 
 <a id="-contato"></a>
 
