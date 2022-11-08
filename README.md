@@ -5,6 +5,8 @@ end.
 
 <hr>
 
+&nbsp;
+
 | :placard: Vitrine.Dev |                             |
 | --------------------- | --------------------------- |
 | :sparkles: Nome       | **JavaScript para Backend** |
@@ -12,11 +14,15 @@ end.
 | :rocket: URL          | -                           |
 | :fire: Desafio        | -                           |
 
+&nbsp;
+
 <hr>
 
 ![](https://github.com/LivioAlvarenga/JavaScriptBackend/blob/main/files/javascript-code.jpg?raw=true#vitrinedev)
 
 <hr>
+
+&nbsp;
 
 <p align="center">
   <a href="#-tecnologias-utilizadas">Tecnologias</a> -
@@ -24,6 +30,8 @@ end.
   <a href="#-indice">Índice</a> -
   <a href="#-contato">Contato</a>
 </p>
+
+&nbsp;
 
 <a id="-tecnologias-utilizadas"></a>
 
@@ -44,7 +52,7 @@ end.
   <a href="https://github.com/LivioAlvarenga/JavaScriptBackend"><img src="https://img.shields.io/github/repo-size/LivioAlvarenga/JavaScriptBackend" alt="repository size" /></a>
 <p>
 <p align="center">
-  <a href= "https://www.livioalvarenga.com/"><img alt="portifólio livio alvarenga" src="files/badgePortifolioLivio.svg"></a>
+  <a href= "https://www.livioalvarenga.com/"><img alt="portifólio livio alvarenga" src="https://raw.githubusercontent.com/LivioAlvarenga/JavaScriptBackend/8f9eeb7e8900be1c8cf972d2457bb55b7107c54a/files/badgePortifolioLivio.svg"></a>
   <a href= "https://www.linkedin.com/in/livio-alvarenga-planejamento-mrp-engenheiro-produ%C3%A7%C3%A3o-materiais-vba-powerbi/"><img alt="perfil linkedin livio alvarenga" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=0A66C2&logo=LinkedIn&label=LinkedIn&message=Livio Alvarenga&color=0A66C2"></a>
   <a href= "https://twitter.com/AlvarengaLivio"><img alt="perfil twitter livio alvarenga" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=1DA1F2&logo=Twitter&label=Twitter&message=@AlvarengaLivio&color=1DA1F2"></a>
   <a href= "https://www.instagram.com/livio_alvarenga/"><img alt="perfil instagram livio alvarenga" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=E4405F&logo=Instagram&label=Instagram&message=@livio_alvarenga&color=E4405F"></a>
