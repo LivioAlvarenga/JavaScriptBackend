@@ -67,5 +67,3 @@ age = 22
 console.log(name, age)
 console.log("nome: " + name + " - age: " + age)
 console.log(`nome: ${name} - age: ${age}`)
-
-// - 

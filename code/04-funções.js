@@ -110,3 +110,37 @@ function Car(name, color) {
 const veiculo = new Car("fusca", "branco");
 console.log(veiculo.name);
 console.log(veiculo.color);
+
+// - High order functions
+
+// simulando um sistema de login com high order function e callback function
+
+// callback function
+const acesso = (nome) => {
+    return `${nome} logou com sucesso no sistema!`;
+};
+
+// callback function
+const autentica = (cargo) => {
+    let array = [];
+    for (i = 0; i < cargo; i++) {
+        array.push(i);
+    }
+    return true;
+};
+
+// higher order function login()
+const login = (pessoa, autentica) => {
+    if (pessoa.cargo === "funcionario") {
+        autentica(90000);
+    } else if (pessoa.cargo === "diretoria") {
+        autentica(900000);
+    }
+    return acesso(pessoa.nome);
+};
+
+console.log(login({ cargo: "diretoria", nome: "Leia" }, autentica));
+
+/* High order functions são funções que recebem uma função ou mais como argumento, retornando outra função;
+Isso permite a composição de funções, ou seja, ter funções pequenas que compõem outras funções maiores;
+funções que são chamadas dentro de outra são chamadas callback functions, pois são “called back” (“chamadas de volta” em uma tradução livre) dentro da função onde estão compostas. */

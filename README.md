@@ -63,9 +63,43 @@ Usamos o Vscode como IDE e o Node.js para rodar JavaScript.
 ## :bookmark_tabs: Índice de códigos
 
 1. Tipos Primitivos
+    * Number
+    * String
+    * Boolean
+    * Undefined
+    * Null
+    * Object
+    * Array
+    * Conversão de tipos
+    * Tipagem dinâmica (untyped)
 2. Variáveis
+    * Declarar X Atribuir
+    * Agrupamento de declarações
+    * Typeof
+    * var, const e let
+    * console.log
 3. Operadores
+   	* Operadores Lógicos >, <, >=, <=, \==, !=, === !==
+   	* == Vs ===
+   	* || (or) && (and)
+   	* Operador ternário (condição ? true : false)
+   	* Unary, Binary and Ternary
+   	* new (new object)
+   	* Operadores Aritméticos
+   	* Operadores de atribuição
+   	* FALSY e TRUTHY
+   	* Operator precendence
 4. Funções
+	* function declaration
+	* function anonymous
+	* parameters VS arguments
+	* return Vs not return
+	* function scope
+	* function hoisting
+	* arrow function
+	* callback function
+	* function() constructor
+	* high order functions
 
 <a id="-contato"></a>
 
