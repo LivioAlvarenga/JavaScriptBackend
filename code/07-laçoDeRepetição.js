@@ -32,3 +32,75 @@ números.forEach((número) => {
 });
 const média = somaDasNotas / números.length;
 console.log(média);
+
+// - map()
+const números = [100, 200, 300, 400, 500, 600];
+const númerosAtualizados = números.map((número) => {
+    return ++número;
+});
+console.log(números);
+console.log(númerosAtualizados);
+
+// Padronizar dados em UpperCase
+const nomes = ["ana Julia", "Caio vinicius", "BIA silva"];
+const nomesPadronizados = nomes.map((nome) => {
+    return nome.toUpperCase();
+});
+console.log(nomesPadronizados);
+
+// Padronizar dados em UpperCase - omitir a palavra-chave return
+const nomes = ["ana Julia", "Caio vinicius", "BIA silva"];
+const nomesPadronizados = nomes.map((nome) => nome.toUpperCase());
+console.log(nomesPadronizados);
+
+// - filter()
+const alunos = ["Ana", "Marcos", "Maria", "Mauro"];
+const medias = [7, 4.5, 8, 7.5];
+//Quando iterar em um array você tem value e index, como so precisamos de index omitimos o value com _
+const reprovados = alunos.filter((_, índice) => {
+    return medias[índice] < 7;
+});
+console.log(reprovados);
+
+// - reduce()
+const salaJS = [7, 8, 8, 7, 10, 6.5, 4, 10, 7];
+const salaJava = [6, 5, 8, 9, 5, 6];
+const salaPython = [7, 3.5, 8, 9.5];
+function calculaMedia(notasDaSala) {
+    const somaDasNotas = notasDaSala.reduce((acumulador, nota) => {
+        return acumulador + nota;
+    }, 0);
+    const media = somaDasNotas / notasDaSala.length;
+    return media;
+}
+console.log(`A média da sala de JavaScript é ${calculaMedia(salaJS)}`);
+console.log(`A média da sala de Java é ${calculaMedia(salaJava)}`);
+console.log(`A média da sala de Python é ${calculaMedia(salaPython)}`);
+
+/*
+Num primeiro momento o reduce pode parecer um pouco mais complicado, ele tem uma lógica bem interna, abstrai bastante coisa. Mas, resumindo, usamos o acumulador, informamos o valor inicial dele no segundo parâmetro do reduce e vamos atualizando o valor do acumulador a cada iteração que fazemos na lista.
+
+Por fim, o parâmetro acumulador também é muito chamado de acc, que é uma abreviação do nome dele em inglês. E também podemos usar diretamente o retorno da função arrow function, em vez de usar a palavra return, vamos fazer essas modificações no nosso código:
+*/
+const salaJS = [7, 8, 8, 7, 10, 6.5, 4, 10, 7];
+const salaJava = [6, 5, 8, 9, 5, 6];
+const salaPython = [7, 3.5, 8, 9.5];
+function calculaMedia(notasDaSala) {
+    const somaDasNotas = notasDaSala.reduce((acc, nota) => acc + nota, 0);
+    const media = somaDasNotas / notasDaSala.length;
+    return media;
+}
+console.log(`A média da sala de JavaScript é ${calculaMedia(salaJS)}`);
+console.log(`A média da sala de Java é ${calculaMedia(salaJava)}`);
+console.log(`A média da sala de Python é ${calculaMedia(salaPython)}`);
+
+// - set() - Eliminando itens repetidos em um array
+const nomes = ["Ana", "Clara", "Maria", "Maria", "João", "João", "João"];
+const meuSet = new Set(nomes);
+const nomesAtualizados = [...meuSet];
+console.log(nomesAtualizados);
+
+// otimizando código
+const nomes = ["Ana", "Clara", "Maria", "Maria", "João", "João", "João"];
+const nomesAtualizados = [...new Set(nomes)];
+console.log(nomesAtualizados);

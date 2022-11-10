@@ -134,6 +134,8 @@ Usamos o Vscode como IDE e o Node.js para rodar JavaScript.
     array esparso
     array de duas dimensões
     Destructuring em JS
+    Copiando/Clonando um array
+    Eliminando itens repetidos do array
     Métodos de array
 
 ### 7. Laços de Repetição
@@ -141,6 +143,10 @@ Usamos o Vscode como IDE e o Node.js para rodar JavaScript.
     for (laço de repetição clássico)
     for of
     forEach
+    map()
+    filter()
+    reduce()
+    set()
 
 &nbsp;
 
@@ -155,7 +161,7 @@ Olá, eu sou Livio Alvarenga, Engenheiro de Produção | Dev Back-end e Front-en
 
 &nbsp;
 
-## :warning: License
+## :no_entry_sign: License
 
 Este projeto é [MIT licensed](./LICENSE).
 

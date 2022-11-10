@@ -20,6 +20,16 @@ const sum = function (number1, number2) {
 };
 sum(2, 2); // arguments
 
+// omitindo parâmetros com _
+const alunos = ["Ana", "Marcos", "Maria", "Mauro"];
+const medias = [7, 4.5, 8, 7.5];
+Quando iterar em um array você tem value e index, como so precisamos de index omitimos o value com _
+const reprovados = alunos.filter((_, índice) => {
+  return medias[índice] < 7;
+});
+console.log(reprovados);
+
+
 // - return Vs not return
 const sum = function () {
     console.log(2 + 2);

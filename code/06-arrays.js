@@ -50,9 +50,48 @@ const pessoa = {
     nome: "Livio",
     idade: 23,
 };
-console.log(pessoa.nome)
+console.log(pessoa.nome);
 const { nome } = pessoa;
-console.log(nome)
+console.log(nome);
+
+// - Copiando/Clonando um array
+// forma errada! O JavaScript entende que novasNotas e notas passam a ser o mesmo array, e agora eles apontam para o mesmo espaço na memória. O JavaScript faz isso por padrão para otimizar memória e performance, em vez de realizar uma cópia do array em toda nova atribuição. Uma atribuição de um array é chamada de atribuição por referência, pois nela é passada a referência do array em si, e não uma cópia de seu valor.
+const notas = [7, 7, 8, 9];
+const novasNotas = notas;
+novasNotas.push(10);
+console.log(`As novas notas são ${novasNotas}`);
+console.log(`As notas originais são ${notas}`);
+
+//forma correta! com ... (operador de espalhamento)
+const notas = [7, 7, 8, 9];
+const novasNotas = [...notas];
+novasNotas.push(10);
+console.log(`As novas notas são ${novasNotas}`);
+console.log(`As notas originais são ${notas}`);
+
+//forma correta! Com push integrado
+const notas = [7, 7, 8, 9];
+const novasNotas = [5, ...notas, 10];
+console.log(`As novas notas são ${novasNotas}`);
+console.log(`As notas originais são ${notas}`);
+
+//Obs.: Porém, esse comportamento não acontece com strings, números e booleanos, que são tipos primitivos do JavaScript. O JavaScript entende que queremos criar uma cópia de num1, e cria uma nova variável, com seu próprio espaço na memória guardando seu valor. Então, ao modificar uma das variáveis, a outra não é alterada. É chamado de atribuição por valor.
+let num1 = 10;
+let num2 = num1;
+num2 += 5;
+num1 += 1;
+console.log(`Num1 é ${num1}. Num2 é ${num2}`);
+
+// - Eliminando itens repetidos do array
+const nomes = ["Ana", "Clara", "Maria", "Maria", "João", "João", "João"];
+const meuSet = new Set(nomes);
+const nomesAtualizados = [...meuSet];
+console.log(nomesAtualizados);
+
+// otimizando código
+const nomes = ["Ana", "Clara", "Maria", "Maria", "João", "João", "João"];
+const nomesAtualizados = [...new Set(nomes)];
+console.log(nomesAtualizados);
 
 // - Métodos de array
 
