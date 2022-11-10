@@ -1,7 +1,7 @@
 // ! Selecione o código e de play, use a extensão codeRunner do Vscode para rodar trechos do código
 
 // -  for (laço de repetição clássico)
-// Para casos em que seja necessário manipular de forma mais fina as fases do laço (condição inicial, condição de parada e incremento).
+// Para casos em que seja necessário manipular de forma mais fina as fases do laço (condição inicial, condição de parada e incremento). for(inicialização de uma variável; condição de continuação para o loop; expressão final)
 const números = [100, 200, 300, 400, 500, 600];
 // Primeira expressão: é executada apenas uma única vez
 // Segunda expressão: condição de execução
@@ -13,6 +13,22 @@ for (let i = 0; i < números.length; i++) {
 const média = somaDasNotas / números.length;
 console.log(média);
 
+// Parando um for com break, ao chegar no 5 para o for
+for (let i = 10; i > 0; i--) {
+    console.log(i);
+    if (i === 5) {
+        break;
+    }
+}
+
+// Ignorando um for com continue, ao chegar no 5 pula o código abaixo
+for (let i = 10; i > 0; i--) {
+    if (i === 5) {
+        continue;
+    }
+    console.log(i); // no 5 será ignorado este código
+}
+
 // - for of
 // Em caso de iteráveis (dicionários, conjuntos e outras estruturas de dados) ou de arrays quando for necessário o uso de programação assíncrona e/ou dar condições de saída do laço (por exemplo, com o uso de break);
 const números = [100, 200, 300, 400, 500, 600];
@@ -23,8 +39,20 @@ for (let número of números) {
 const média = somaDasNotas / números.length;
 console.log(média);
 
+// - for in (index ou key)
+const números = [100, 200, 300, 400, 500, 600];
+for (let número in números) {
+    console.log(número);
+    console.log(números[número]); // desta forma acessamos o valor
+}
+// for of value
+const números = [100, 200, 300, 400, 500, 600];
+for (let número of números) {
+    console.log(número);
+}
+
 // - forEach
-// para trabalhar com arrays da forma mais corriqueira - percorrendo do primeiro ao último elemento, sem alterar a condição de parada, e também para manter a coesão do estilo quando em conjunto com outros métodos de array como map, filter e etc;
+/* para trabalhar com arrays da forma mais corriqueira - percorrendo do primeiro ao último elemento, sem alterar a condição de parada, e também para manter a coesão do estilo quando em conjunto com outros métodos de array como map, filter e etc */
 const números = [100, 200, 300, 400, 500, 600];
 let somaDasNotas = 0;
 números.forEach((número) => {
@@ -32,6 +60,13 @@ números.forEach((número) => {
 });
 const média = somaDasNotas / números.length;
 console.log(média);
+
+// - while (enquanto)
+let i = 0;
+while (i < 5) {
+    console.log(i);
+    i++;
+}
 
 // - map()
 const números = [100, 200, 300, 400, 500, 600];

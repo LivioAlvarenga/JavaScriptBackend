@@ -57,7 +57,6 @@ end.
   <a href= "https://twitter.com/AlvarengaLivio"><img alt="perfil twitter livio alvarenga" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=1DA1F2&logo=Twitter&label=Twitter&message=@AlvarengaLivio&color=1DA1F2"></a>
   <a href= "https://www.instagram.com/livio_alvarenga/"><img alt="perfil instagram livio alvarenga" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=E4405F&logo=Instagram&label=Instagram&message=@livio_alvarenga&color=E4405F"></a>
   <a href= "https://www.youtube.com/channel/UCrZgsh8IWyyNrRZ7cjrPbcg"><img alt="perfil youtube livio alvarenga" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=FF0000&logo=YouTube&label=Youtube&message=Livio Alvarenga&color=FF0000"></a>
-  
 </p>
 
 &nbsp;
@@ -199,13 +198,20 @@ Uso o settings para configurar as cores da seguinte forma:
 
     for (laço de repetição clássico)
     for of
+    for in
     forEach
+    while
     map()
     filter()
     reduce()
     set()
 
 ### 8. Condicionais e Controle De Fluxo
+
+    if...else
+    Operador ternário (Ternary)
+    Switch
+    throw try..catch
 
 &nbsp;
 
