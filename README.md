@@ -66,9 +66,66 @@ end.
 
 ## :warning: Funcionamento
 
-Usamos o Vscode como IDE e o Node.js para rodar JavaScript.
+Uso o Vscode como IDE e o Node.js para rodar JavaScript.
 
 É necessário utilizar a extensão Code Runner para rodar somente trechos do código.
+
+Também uso a extensão Better Comments para modificar a cor dos comentários, segue como vejo o código:
+
+![](https://github.com/LivioAlvarenga/JavaScriptBackend/blob/main/files/extensãoBetterComments.PNG?raw=true)
+
+Uso o settings para configurar as cores da seguinte forma:
+
+```
+// Better-comments
+    "better-comments.multilineComments": true,
+    "better-comments.tags": [
+        {
+            "tag": "!",
+            "color": "#FF2D00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": true,
+            "italic": false
+        },
+        {
+            "tag": ".",
+            "color": "#3498DB",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "--",
+            "color": "#474747",
+            "strikethrough": true,
+            "underline": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "*",
+            "color": "#FF8C00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "-",
+            "color": "#FFF300",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": ">",
+            "color": "#CF79FD",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent"
+        }
+    ],
+```
 
 &nbsp;
 
@@ -147,6 +204,8 @@ Usamos o Vscode como IDE e o Node.js para rodar JavaScript.
     filter()
     reduce()
     set()
+
+### 8. Condicionais e Controle De Fluxo
 
 &nbsp;
 
