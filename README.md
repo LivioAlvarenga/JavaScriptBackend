@@ -229,6 +229,17 @@ Uso o settings para configurar as cores da seguinte forma:
     Diferenças de sintaxe entre JSON e um objeto JavaScript
     JavaScript para o formato JSON para o formato JavaScript
 
+### 11. Prototype \_\_proto\_\_
+
+    acessando __proto__ no nodejs
+    criando objeto que herda de outro objeto
+    adicionando método com prototype
+    own property (propriedade própria)
+
+### 12. OrientaçãoObjetos OO
+
+    d
+
 &nbsp;
 
 <a id="-contato"></a>
