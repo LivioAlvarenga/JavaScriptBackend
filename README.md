@@ -238,7 +238,13 @@ Uso o settings para configurar as cores da seguinte forma:
 
 ### 12. OrientaçãoObjetos OO
 
-    d
+    Criando uma class
+    this
+    desacoplar um método do objeto com this
+    call()
+    apply()
+    bind()
+    herança
 
 &nbsp;
 
