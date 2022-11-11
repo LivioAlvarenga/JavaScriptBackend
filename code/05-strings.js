@@ -26,6 +26,13 @@ console.log(nomeCompleto);
 nomeCompleto = `Meu nome completo é : `;
 console.log(nomeCompleto.concat(nome + " ").concat(sobreNome));
 
+// o template string aceita quebras de linha
+let nome = "André";
+let sobreNome = "Silva";
+nomeCompleto = `Meu nome completo é:
+ ${nome} ${sobreNome}`;
+console.log(nomeCompleto);
+
 // - Métodos para strings
 
 // A propriedade length serve para nos informar o tamanho de uma string.

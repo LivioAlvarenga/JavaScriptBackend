@@ -10,10 +10,10 @@ console.log(typeof variável); // string
 
 // - Agrupamento de declarações
 
-let number, texto, booleano
-number = 10
-texto = "Olá"
-booleano = true
+let number, texto, booleano;
+number = 10;
+texto = "Olá";
+booleano = true;
 
 // - Typeof
 // Variáveis não são tipadas em Javascript, recebe o tipo após atribuição de valor
@@ -60,10 +60,18 @@ console.log("x depois do bloco = ", x);
 
 // - Imprimindo no terminal (console.log)
 
-let name, age
-name = "Livio"
-age = 22
+let name, age;
+name = "Livio";
+age = 22;
 
-console.log(name, age)
-console.log("nome: " + name + " - age: " + age)
-console.log(`nome: ${name} - age: ${age}`)
+console.log(name, age);
+console.log("nome: " + name + " - age: " + age);
+console.log(`nome: ${name} - age: ${age}`);
+
+// imprimindo em tabela
+const dependentes = [
+    { nome: "Maria", idade: 10 },
+    { nome: "João", idade: 5 },
+    { nome: "Arthur", idade: 7 },
+];
+console.table(dependentes);

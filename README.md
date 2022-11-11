@@ -213,6 +213,22 @@ Uso o settings para configurar as cores da seguinte forma:
     Switch
     throw try..catch
 
+### 9. Objetos
+
+    Adicionando e alterando dados
+    Adicionando dados com funções (métodos) dentro do objeto
+    Acessando dados
+    Deletando dados
+    Criando copia de objeto
+    Percorrendo Objetos
+    Convertendo objetos para array
+    Extrair dados de objetos para array com spread operator (...)
+
+### 10. JavaScript Vs JSON
+
+    Diferenças de sintaxe entre JSON e um objeto JavaScript
+    JavaScript para o formato JSON para o formato JavaScript
+
 &nbsp;
 
 <a id="-contato"></a>
