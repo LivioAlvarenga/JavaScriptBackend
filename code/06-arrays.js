@@ -26,7 +26,6 @@ const pares = [2, 4, 6, 8];
 const ímpares = [1, 3, 5, 10];
 let números = [pares, ímpares];
 console.log(números);
-
 números = [...pares, ...ímpares]; // destructuring
 console.log(números);
 

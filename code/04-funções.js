@@ -94,7 +94,7 @@ let getFruit = () => {
 console.log(`getFruit = ${getFruit}`);
 console.log(`getFruit = ${getFruit()}`);
 
-// Arrow function, uma função declarada de maneira mais compacta usando uma const. A arrow function também não tem suporte à hoisting.
+// Arrow function, uma função declarada de maneira mais compacta usando uma const. A arrow function também não tem suporte à hoisting. Não é possível criar construtores com Arrow function.
 console.log(`getFruit = ${fruit}`); // não há suporte à hoisting!!!
 let getFruit = () => {
     return "maçã";

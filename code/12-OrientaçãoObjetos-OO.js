@@ -1,5 +1,12 @@
 // ! Selecione o código e de play, use a extensão codeRunner do Vscode para rodar trechos do código
 
+/* 
+>Curiosidades: 
+    Até o ES6 o JavaScript não tinha classes.
+    As classes não são hoisting, ou seja, não são jogadas para cima, devem ser declaradas antes do uso.
+
+*/
+
 // - Criando uma class
 class Cliente {
     constructor(nome, email, cpf, saldo) {
