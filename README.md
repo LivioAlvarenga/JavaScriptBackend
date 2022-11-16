@@ -245,6 +245,9 @@ Uso o settings para configurar as cores da seguinte forma:
     apply()
     bind()
     herança
+    atributos privados _ ou #
+    modularizando código javascript
+    getters e setters
 
 &nbsp;
 

@@ -1,0 +1,21 @@
+{
+    "name": "javascriptbackend",
+    "version": "1.0.0",
+    "description": "Repositório para adicionar conteúdos de estudos e boas práticas em JavaScript com foco no Backend.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/LivioAlvarenga/JavaScriptBackend.git"
+    },
+    "keywords": [],
+    "author": "Livio Alvarenga <livioalvarenga@gmail.com>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/LivioAlvarenga/JavaScriptBackend/issues"
+    },
+    "homepage": "https://github.com/LivioAlvarenga/JavaScriptBackend#readme",
+    "type": "module"
+}

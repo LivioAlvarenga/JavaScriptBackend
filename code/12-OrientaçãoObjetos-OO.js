@@ -161,3 +161,106 @@ console.log(andre);
 andre.depositar(50);
 andre.depositarPoupanca(50);
 console.log(andre);
+
+// - atributos privados _ ou #
+/*  
+Existe uma proposta de implementação apresentada que ao colocar uma cerquilha (#) à frente do atributo e assim defini-lo como campo privado. https://github.com/tc39/proposal-class-fields#private-fields
+
+A convenção da comunidade é de que se colocamos um underline (_) à frente de um atributo, isso significa que ele é privado. Mas não é privado de verdade, não fica realmente privado, mas é uma convenção da comunidade que não devemos mexer em atributos antecedidos pelo underline (_), ele não deve ser acessado de fora da classe. Apenas os métodos e comportamentos dentro do escopo da classe podem acessá-lo. Embora seja possível acessá-lo fora da classe, não é uma boa prática fazer isso.
+
+Então, enquanto a proposta de campos privados não é oficialmente implementada, a convenção é usar o underline (_).
+*/
+class ContaCorrente {
+    agencia;
+    // #saldo =0 https://github.com/tc39/proposal-class-fields#private-fields
+    _saldo = 0;
+    sacar(valor) {
+        if (this._saldo >= valor) {
+            this._saldo -= valor;
+            return valor;
+        }
+    }
+    depositar(valor) {
+        if (valor <= 0) {
+            return;
+        }
+        this._saldo += valor;
+    }
+}
+// Por padrão no JS utilizamos o "_" para indicar que um atributo é privado e não deveria ser alterado. Apesar de ainda ser possível alterar essa propriedade isso é considerado uma má prática e estamos quebrando o encapsulamento da classe. Atualmente no Js nenhum atributo ou método é realmente privado, o JS é uma linguagem de escopo aberto e por isso é possível visualizar qualquer atributo ou propriedade de nossa classe.
+
+// - modularizando código javascript
+
+/* Criamos módulos para compartilhar código entre os diferentes arquivos do meu sistema, ajudando na organização dele. Dentro do JS cada arquivo é considerado um módulo e podemos escolher o que queremos exportar ou não a partir dele.
+
+Para criarmos módulos seguimos os seguintes passos:
+
+1 . Adicionamos export na class que queremos exportar.
+*/
+export class Cliente {
+    nome;
+    cpf;
+}
+
+// 2. Salvamos o arquivo com Primeira Letra Maiúscula. No exemplo seria Cliente.js Salvamos em ../modules/Cliente.js
+
+// 3. Fazemos o import dos modulos
+import { Cliente } from "../modules/Cliente.js";
+import { ContaCorrente } from "../modules/ContaCorrente.js";
+
+// 4. Criamos um package.json - O package.json é um arquivo muito utilizado em aplicações JS modernas que guarda vários dados de nossa aplicação. O arquivo gerado para este curso tem apenas algumas informações. Usamos npm init -y. Posteriormente adicionamos "type": "module"
+import { Cliente } from "../modules/Cliente.js";
+import { ContaCorrente } from "../modules/ContaCorrente.js";
+
+const cliente1 = new Cliente();
+cliente1.nome = "Ricardo";
+cliente1.cpf = 11122233309;
+
+console.log(cliente1.nome);
+// Agora conseguimos acessar os módulos e ganhamos uma funcionalidade que deixa nosso código mais organizado.
+
+// - getters e setters
+// Para acessarmos propriedades privadas (_) usamos getters (get) e setters (set).
+
+class ContaCorrente {
+    _cliente;
+    _saldo = 0;
+    set cliente(novoValor) {
+        if (novoValor instanceof Cliente) {
+            this._cliente = novoValor;
+        }
+    }
+    get cliente() {
+        return this._cliente;
+    }
+    get saldo() {
+        return this._saldo;
+    } // Como saldo não queremos que mude diretamente adicionamos somente um get, assim protegemos nossa aplicação
+}
+
+// selecione daqui para baixo para testar
+import { Cliente } from "../modules/Cliente.js";
+import { ContaCorrente } from "../modules/ContaCorrente.js";
+
+const cliente1 = new Cliente();
+cliente1.nome = "Ricardo";
+cliente1.cpf = 11122233309;
+
+const cliente2 = new Cliente();
+cliente2.nome = "Alice";
+cliente2.cpf = 88822233309;
+
+const contaCorrenteRicardo = new ContaCorrente();
+contaCorrenteRicardo.agencia = 1001;
+contaCorrenteRicardo.cliente = cliente1;
+contaCorrenteRicardo.depositar(500);
+
+const conta2 = new ContaCorrente();
+conta2.cliente = cliente1;
+conta2.agencia = 102;
+
+let valor = 200;
+contaCorrenteRicardo.tranferir(valor, conta2);
+
+conta2.saldo = 30000; // veja que não conseguimos mudar o valor do saldo, pois não temos um set
+console.log(conta2.saldo);
