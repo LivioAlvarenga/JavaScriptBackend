@@ -264,3 +264,28 @@ contaCorrenteRicardo.tranferir(valor, conta2);
 
 conta2.saldo = 30000; // veja que não conseguimos mudar o valor do saldo, pois não temos um set
 console.log(conta2.saldo);
+
+// - construtores
+
+/* Construtores são utilizados para inicializar os atributos. A inicialização de atributos é a principal responsabilidade do construtor.
+
+export class Cliente {
+    nome;
+    _cpf;
+
+    get cpf() {
+        return this._cpf;
+    }
+
+    constructor(nome, cpf) {
+        this.nome = nome;
+        this._cpf = cpf;
+    }  <======= Adicionamos construtor
+}
+*/
+
+import { Cliente } from "../modules/Cliente.js";
+import { ContaCorrente } from "../modules/ContaCorrente.js";
+
+const cliente1 = new Cliente("Ricardo", 11122233309);
+console.log(cliente1);
