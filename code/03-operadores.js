@@ -27,27 +27,21 @@ console.log(age1 > age2 && age1 < age2); // Retorna true se age1 for maior que a
 
 const minAge = 18;
 const age = 16;
-
 // com if
 if (age >= minAge) {
     console.log("Maior de idade");
 } else {
     console.log("Menor de idade");
 }
-
 // com ternário
 console.log(age >= minAge ? "Maior de idade" : "Menor de idade");
 
-a = [];
-b = 20;
-c = true;
-d = "";
-
-if (b == "20") {
-    console.log("Verdade");
-} else {
-    console.log("Falso");
-}
+// ternário com ??
+const type = "png";
+const type2 = "gif";
+const type3 = undefined;
+console.log(type ?? type2)
+console.log(type3 ?? type2)
 
 // - Unary, Binary and Ternary
 
